@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="w-icon" href="app-icon.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left" style="color: rgb(239, 233, 233);">Weather App</div>
+      <div class="right" style="color: rgb(239, 233, 233);">
+        <a href="https://www.polywork.com/siddharth_bhoir" style="text-decoration: none; color: inherit;">About the Developer</a>
+      </div>
+  </nav>
+  </header>
+  <div class="div1">
+    <div class="div2">
+      <div class="search-area">
+        <input class="input-box" type="text" placeholder="Enter Your Location">
+        <button class="fa-sharp fa-solid fa-magnifying-glass" id="searchbtn"></button>
+      </div>
+    </div>
+
+    <div class="loc-not-found">
+      <h1>Sorry, Location not Found!</h1>
+      <img src="location-not-found.svg" alt="">
+    </div>
+
+    <div class="main-weather">
+      <img src="cloud_def.png" alt="Weather" class="weather-img">
+      <div class="weather-box">
+        <p class="temp">0 <sup>°C</sup></p>
+        <p class="desc">No Information</p>
+      </div>
+
+      <div class="weather-details">
+        <div class="humidity">
+          <i class="fa-solid fa-droplet" style="color: #e4e0e5;"></i>
+          <div class="text">
+            <span id="humid">--%</span>
+            <p>Humidity</p>
+          </div>
+        </div>
+
+        <div class="wind">
+          <i class="fa-solid fa-wind" style="color: #e4e0e5;"></i>
+          <div class="text">
+            <span id="windSpeed">--km/h</span>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/0df8f0623b.js" crossorigin="anonymous"></script>
+</body>
+</html>
